@@ -1,1 +1,1 @@
-# proekt-for-vpt
+# project-for-vpt
