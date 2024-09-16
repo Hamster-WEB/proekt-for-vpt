@@ -1,0 +1,1882 @@
+/* Подключение шрифтов */
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: AvenirIt;
+    src: url(../fonts/avenirnextcyr-light.ttf);
+}
+
+@font-face {
+    font-family: PoppinsSemibold;
+    src: url(../fonts/poppins-semibold.ttf);
+}
+
+@font-face {
+    font-family: UnboundedRegular;
+    src: url(../fonts/Unbounded-Regular.ttf);
+}
+
+@font-face {
+    font-family: UnboundedSemibold;
+    src: url(../fonts/Unbounded-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: PixelFonts;
+    src: url(../fonts/pixelfonts.ttf);
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: url(../fonts/FontAwesome.otf);
+}
+
+
+/* Сброс стилей */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+}
+
+.preload {
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    overflow: hidden;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+th {
+    text-align: inherit;
+    font-size: 18px;
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+}
+
+td {
+    font-size: 18px;
+    font-family: 'AvenirIt';
+}
+
+/**/
+
+/* Шапка сайта */
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #56499E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.header-wrapper {
+    max-width: 1170px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-link {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+    padding: 0px 15px;
+    transition: all 0.4s;
+    width: 150px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-mobile-menu {
+    width: 50px;
+    height: 30px;
+    border: none;
+    font-family: 'AvenirIt';
+    cursor: pointer;
+    display: none;
+    color: #FFFFFF;
+    font-size: 25px;
+    background: transparent;
+}
+
+/* Секция About */
+
+.about {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url("../img/about-img.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+.about-wrapper {
+    z-index: 3;
+    position: relative;
+}
+
+.about-title {
+    font-size: 66px;
+    font-family: 'UnboundedSemibold';
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.about-subtitle {
+    font-size: 24px;
+    font-family: 'AvenirIt';
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.about-info {
+    max-width: 1170px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.about-co-logo {
+    width: 320px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 15px;
+}
+
+.about-co-logo-title {
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+}
+
+.about-co-logo-subtitle {
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+}
+
+.about-info-win {
+    overflow: hidden;
+    max-width: 700px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.about-info-address {
+    width: 240px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.about-info-address-wrapper {
+    width: 210px;
+    height: 45px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-info-address-title {
+    font-family: 'UnboundedSemibold';
+    font-weight: bolder;
+    font-size: 16px;
+    color: white;
+}
+
+.about-info-address-info {
+    font-family: 'AvenirIt';
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+}
+
+.about-info-phone {
+    width: 230px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.about-info-phone-wrapper {
+    width: 200px;
+    height: 45px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-info-phone-title {
+    font-family: 'UnboundedSemibold';
+    font-weight: bolder;
+    font-size: 16px;
+    color: white;
+}
+
+.about-info-phone-info {
+    font-family: 'AvenirIt';
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+}
+
+.about-info-contactBtn {
+    width: 210px;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #56499E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+    transition: all 0.4s;
+}
+
+/* Особенности */
+
+.features {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.features-title {
+    font-size: 36px;
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+    color: black;
+    position: relative;
+    margin-bottom: 60px;
+    text-align: center
+}
+
+.features-title:after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    display: block;
+}
+
+.features-wrapper {
+    max-width: 1170px;
+    width: 100%;
+    min-height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.features-item {
+    width: 350px;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.features-item-icon {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    border: 1px solid #56499E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-icon {
+    transition: all 0.4s;
+}
+
+.features-item-title {
+    font-size: 25px;
+    color: black;
+    font-family: 'AvenirIt';
+    font-weight: normal;
+}
+
+.features-item-text {
+    font-size: 18px;
+    color: black;
+    font-family: 'AvenirIt';
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Информация */
+
+.information {
+    width: 100%;
+    min-height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    padding: 60px 0px;
+}
+
+.info-wrapper {
+    max-width: 1170px;
+    width: 100%;
+    min-height: 470px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-item {
+    width: 250px;
+    height: 470px;
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+}
+
+.info-item-img {
+    width: 250px;
+    height: 250px;
+    background: url('../img/info-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-item-wrapper {
+    width: 250px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid #E5E5E5;
+    padding: 25px;
+}
+
+.info-item-title {
+    font-size: 23px;
+    color: black;
+    font-weight: bolder;
+    font-family: 'AvenirIt';
+    text-align: center;
+}
+
+.info-item-subtitle {
+    font-size: 18px;
+    color: black;
+    font-weight: normal;
+    font-family: 'AvenirIt';
+    text-align: center;
+    margin-top: 15px;
+}
+
+.info-item-btn {
+    width: 155px;
+    height: 40px;
+    padding: 0px 22px;
+    background-color: #56499E;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'AvenirIt';
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+/* Секция предложений */
+
+.products {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+}
+
+.products-title {
+    font-size: 36px;
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+    color: black;
+    position: relative;
+    margin-bottom: 60px;
+    padding-top: 40px;
+}
+
+.products-title:after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    display: block;
+}
+
+.info-item-img1 {
+    background: url('../img/products-img1.jpg');
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-item-img2 {
+    background: url('../img/products-img2.jpg');
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-item-img3 {
+    background: url('../img/products-img3.jpg');
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-item-img4 {
+    background: url('../img/products-img4.jpg');
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-itemP {
+    width: 250px;
+    height: 470px;
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.info-item-wrapperP {
+    width: 250px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+    padding: 25px;
+}
+
+/* Секция О нас в цифрах */
+
+.aboutUs {
+    width: 100%;
+    min-height: 405px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('../img/aboutUs-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 3;
+}
+
+.aboutUs:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+.aboutUs-title {
+    font-size: 36px;
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+    color: white;
+    position: relative;
+    margin-bottom: 60px;
+    padding-top: 40px;
+    z-index: 3;
+}
+
+.aboutUs-title:after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: white;
+    display: block;
+}
+
+.aboutUs-wrapper {
+    max-width: 1170px;
+    width: 100%;
+    min-height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.aboutUs-item {
+    width: 250px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.aboutUs-item-title {
+    font-size: 56px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'UnboundedSemibold';
+}
+
+.aboutUs-item-text {
+    font-size: 18px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'AvenirIt';
+}
+
+/* Секция гандурасов */
+
+.whyCreateClassNameSoHard {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.wCCNSH-wrapper {
+    max-width: 1170px;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.wCCNSH-info {
+    width: 585px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+.wCCNSH-title {
+    font-size: 27px;
+    color: black;
+    font-weight: bolder;
+    font-family: 'UnboundedSemibold';
+}
+
+.wCCNSH-text {
+    font-size: 18px;
+    color: black;
+    font-family: 'AvenirIt';
+    padding-top: 30px;
+    line-height: 30px;
+    max-width: 485px;
+}
+
+.wCCNSH-img {
+    width: 585px;
+    height: 600px;
+}
+
+.wCCNSH-img img {
+    width: 585px;
+    height: 600px;
+}
+
+.wCCNSH-btn {
+    width: 210px;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #56499E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+    transition: all 0.4s;
+    margin-top: 40px;
+}
+
+/* Секция скидок */
+
+.discount {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+
+.discount-wrapper {
+    max-width: 1140px;
+    width: 100%;
+    min-height: 270px;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    margin: 15px;
+}
+
+.discount-title {
+    font-size: 27px;
+    color: black;
+    font-weight: bolder;
+    font-family: 'UnboundedSemibold';
+}
+
+.discount-text {
+    font-size: 18px;
+    color: black;
+    font-family: 'AvenirIt';
+    line-height: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.discount-btn {
+    width: 210px;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #56499E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+    transition: all 0.4s;
+    margin-top: 40px;
+}
+
+/* Секция наших партнёров */
+
+.ourPartner {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.ourPartner-title {
+    font-size: 36px;
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+    color: black;
+    position: relative;
+    margin-bottom: 60px;
+    padding-top: 40px;
+    z-index: 3;
+    text-align: center;
+}
+
+.ourPartner-title:after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    display: block;
+}
+
+.ourPartner-wrapper {
+    max-width: 1170px;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ourPartner-carousel-item {
+    width: 175px;
+    height: 130px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourPartner-carousel-item img{
+    width: 175px;
+    height: 130px;
+}
+
+/* Отзывы */
+
+.reviews {
+    width: 100%;
+    min-height: 722px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../img/reviews-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 3;
+}
+
+.reviews:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 2;
+}
+
+.reviews-title {
+    font-size: 36px;
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+    color: white;
+    position: relative;
+    margin-bottom: 60px;
+    padding-top: 40px;
+    z-index: 3;
+    text-align: center;
+}
+
+.reviews-title:after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: white;
+    display: block;
+}
+
+.reviews-wrapper {
+    max-width: 1140px;
+    width: 100%;
+    min-height: 440px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    padding: 15px;
+}
+
+.reviews-item {
+    max-width: 1100px;
+    width: 100%;
+    min-height: 135px;
+    display: flex;
+    margin: 15px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.reviews-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.reviews-avatar.first {
+    background: url('../img/reviews-avatar/reviews-avatar1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reviews-avatar.second {
+    background: url('../img/reviews-avatar/reviews-avatar2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reviews-avatar.thirst {
+    background: url('../img/reviews-avatar/reviews-avatar3.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reviews-info {
+    max-width: 1020px;
+    width: 100%;
+    min-height: 100px;
+    padding-left: 15px;
+}
+
+.reviews-text {
+    font-size: 18px;
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+    color: #EEEEEE;
+}
+
+.reviews-name {
+    font-size: 13px;
+    font-family: 'UnboundedSemibold';
+    font-weight: bolder;
+    color: #EEEEEE;
+    margin-top: 10px;
+}
+
+/* Секция контактов */
+
+.contacts {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contacts-wrapper {
+    max-width: 1170px;
+    width: 100%;
+    height: 470px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 15px;
+    position: absolute;
+}
+
+.contact-window {
+    max-width: 380px;
+    width: 100%;
+    height: 460px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.15);
+    padding: 40px;
+    margin: 15px;
+}
+
+.contact-window-title {
+    font-size: 25px;
+    color: black;
+    font-weight: bolder;
+    font-family: 'UnboundedSemibold';
+}
+
+.contact-window-subtitle {
+    font-size: 18px;
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+    color: black;
+}
+
+.contact-form {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact-form-input {
+    max-width: 380px;
+    width: 100%;
+    height: 38px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    font-weight: bolder;
+    background-color: #fff;
+    background-clip: padding-box;
+    font-family: 'AvenirIt';
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.contact-form-input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #666666;
+    outline: 0;
+}
+
+.ya-map {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form-input::placeholder {
+    color: #BDBDBD;
+    font-family: 'AvenirIt';
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.contact-text {
+    font-size: 14px;
+    color: #6c757d;
+    font-family: 'AvenirIt';
+    margin: 4px 0px 0px;
+}
+
+.contact-text a {
+    color: #535099;
+    font-size: 14px;
+    font-family: 'AvenirIt';
+    text-decoration: none;
+}
+
+.contact-form-btn {
+    width: 135px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #56499E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+    transition: all 0.4s;
+    margin: 5px 5px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Подвал */
+
+footer {
+    width: 100%;
+    height: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+
+.footer-wrapper {
+    max-width: 1170px;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+.footer-text {
+    color: #CCC;
+    font-size: 14px;
+    font-family: 'AvenirIt';
+    padding-left: 10px;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Важная часть */
+
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0; 
+    pointer-events: none; 
+    transition: 0.5s all;
+    z-index: 9998;
+}
+
+.popup__bg.active { 
+    opacity: 1; 
+    pointer-events: all; 
+    transition: 0.5s all;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); 
+    background: #fff;
+    max-width: 500px;
+    width: 100%;
+    transition: 0.5s all;
+    z-index: 9999;
+    margin: 0px 15px;
+}
+
+.popup.active { 
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+/* Конец важной части */
+
+/* Далее код для стилизации формы */
+
+.popup-header {
+    width: 100%;
+    height: 60px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-popup {
+    cursor: pointer;
+}
+
+.popup-title {
+    font-family: 'UnboundedSemiBold';
+    color: #444444;
+    font-size: 18px;
+}
+
+.popup label {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.form-group label {
+    font-family: 'UnboundedSemiBold';
+    color: #555555;
+    font-size: 18px;
+    margin: 0px 0px 10px;
+}
+
+.form-group {
+    margin: 0px 0px 16px;
+}
+
+.popup .label__text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #cfd0d3;
+    margin-bottom: 5px;
+}
+
+.popup input {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-radius: 3px 
+}
+
+.popup input:focus {
+    border-color: #999;
+    box-shadow: none;
+    outline: none;
+}
+
+.popup input:focus + .label__text {
+    color: #2982ff;
+}
+
+.popup textarea {
+    resize: none;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.popup textarea:focus {
+    border-color: #999;
+    box-shadow: none;
+    outline: none;
+}
+
+.popup textarea:focus + .label__text {
+    color: #2982ff;
+}
+
+.popup button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    background: #535099;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.popup-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ced4da;
+}
+
+.popup-form {
+    width: 100%;
+    height: 580px;
+    padding: 16px;
+}
+
+.form-text {
+    color: #6C757C;
+    font-size: 14px;
+    font-family: 'AvenirIt';
+}
+
+.form-text a {
+    color: #535099;
+    font-size: 14px;
+    font-family: 'AvenirIt';
+    text-decoration: none;
+}
+
+/* Страница Паге */
+
+.main-information {
+    width: 100%;
+    min-height: 1032px;
+    padding: 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-information-wrapper {
+    max-width: 1170px;
+    width: 100%;
+    min-height: 900px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    flex-wrap: wrap;
+}
+
+.main-information-navigation {
+    width: 250px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.main-information-navigation a{
+    width: 100%;
+    height: 51px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #495057;
+    text-align: inherit;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin-bottom: 0;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+    border-bottom: 0px;
+    font-family: 'AvenirIt';
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.main-information-navigation a.last-el-nav {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.information-wrapper {
+    max-width: 840px;
+    width: 100%;
+    min-height: 860px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.information-wrapper1 {
+    max-width: 1170px;
+    width: 100%;
+    min-height: 860px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.info-wrap-uptitle {
+    color: #6c757d;
+    font-size: 18px;
+    font-family: 'AvenirIt';
+}
+
+.info-wrap-title {
+    font-size: 36px;
+    font-family: 'UnboundedSemiBold';
+    font-weight: bolder;
+    color: black;
+    position: relative;
+    margin-bottom: 60px;
+    padding-top: 40px;
+    z-index: 3;
+}
+
+.info-wrap-title:after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    display: block;
+}
+
+.info-wrap-text {
+    color: #222;
+    font-size: 20px;
+    font-family: 'AvenirIt';
+    padding-top: 15px;
+}
+
+.info-wrap-subtitle {
+    color: #222;
+    font-size: 27px;
+    font-family: 'UnboundedSemiBold';
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.info-stocks-wrap {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    line-height: 1.8;
+}
+
+.info-stocks-wrap-title {
+    color: #222;
+    font-family: 'AvenirIt';
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.info-stocks-wrap li {
+    color: #222;
+    font-family: 'AvenirIt';
+    font-size: 18px;
+}
+
+/* Новости */
+
+.info-news-wrap {
+    max-width: 1140px;
+    width: 100%;
+    min-height: 270px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.info-news-wrap:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #DEDEDE;
+    position: absolute;
+    bottom: -1%;
+}
+
+.info-img-wrap {
+    width: 300px;
+    height: 225px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.info-img {
+    width: 300px;
+    height: 270px;
+    transition: all 0.5s;
+}
+
+.info-img-wrap:after {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: white;
+    content: "";
+    position: absolute;
+    display: block;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.info-info-wrap {
+    padding-left: 20px;
+    max-width: 810px;
+    width: 100%;
+    min-height: 270px;
+}
+
+.info-title {
+    font-size: 27px;
+    color: #222222;
+    font-family: 'AvenirIt';
+    font-weight: bolder;
+}
+
+.info-subtitle {
+    display: flex;
+    width: 100px;
+    height: 20px;
+    align-items: center;
+}
+
+.info-date {
+    font-size: 13px;
+    color: #999999;
+    font-family: 'AvenirIt';
+    font-style: italic;
+    padding-left: 6px;
+}
+
+.info-text {
+    font-size: 18px;
+    color: #222;
+    font-family: 'AvenirIt';
+    padding: 15px 0px;
+}
+
+.info-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #535099;
+    font-family: 'AvenirIt';
+    font-style: italic;
+    font-weight: bolder;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.info-link:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #535099;
+    left: 0;
+    bottom: -5%;
+    transition: all 0.5s;
+}
+
+.info-link:hover {
+    color: black;
+    transition: all 0.5s;
+}
+
+.info-link:hover:after {
+    background-color: black;
+    transition: all 0.5s;
+}
+
+/* Медиа-запросы */
+
+/* Медиа-запросы размеров экрана */
+
+@media (max-width: 1200px) {
+    .about-info-contactBtn {
+        display: none;
+    }
+    
+    .wCCNSH-img {
+        display: none;
+    }
+}
+
+@media (max-width: 1120px) {
+    .main-information-wrapper {
+        justify-content: center;
+    }
+    
+    .main-information-navigation {
+        max-width: 820px;
+        width: 100%;
+    }
+    
+    .main-information-navigation a{
+        max-width: 820px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .aboutUs-wrapper {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 870px) {
+    .about-info-win {
+        display: none;
+    }
+    
+    .info-img-wrap {
+        display: none;
+    }
+}
+
+@media (max-width: 770px) {
+    header {
+        justify-content: flex-end;
+    }
+    
+    .header-wrapper {
+        padding-right: 40px;
+    }
+    
+    .header-mobile-menu {
+        display: block;
+        position: relative;
+    }
+
+    .header-mobile-menu span {
+        background-color: #FFF;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        top: 13px;
+        transition: all 0.4s;
+    }
+
+    .header-mobile-menu::after,
+    .header-mobile-menu::before {
+        content: '';
+        background-color: #FFF;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        transition: all 0.4s;
+    }
+    .header-mobile-menu:before {
+        top: 0;
+    }
+
+    .header-mobile-menu:after {
+        bottom: 0;
+    }
+    
+    .header-nav {
+        max-width: 500px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    .header-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header-nav-menu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        height: 240px;
+        bottom: 180px;
+        transition: all 0.5s;
+        width: 0%;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #56499E;
+        box-shadow: 0px 10px 5px 1px rgba(0, 0, 0, 0.25) inset; 
+        overflow: hidden;
+        z-index: 9999;
+    }
+    
+    .header-nav-menu.active {
+        width: 100%;
+        transition: all 0.5s;
+    }
+
+    .header-mobile-menu.active:before{
+        transform: rotate(45deg);
+        top: 12px;
+        background-color: #FFF;
+    }
+
+    .header-mobile-menu.active:after{
+        transform: rotate(-45deg);
+        bottom: 12px;
+        background-color: #FFF;
+    }
+
+    .header-mobile-menu.active span {
+        transform: scale(0);
+        background-color: #FFF;
+    }
+    
+    .header-link {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        justify-content: start;
+    }
+    
+    .footer-right {
+        display: none;
+    }
+    
+    .footer-wrapper {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 740px) {
+    .about-title {
+        font-size: 40px;
+        padding: 0px 10px;
+    }
+    
+    .about-subtitle {
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width: 470px) {
+    .about-title {
+        font-size: 30px;
+        padding: 0px 10px;
+    }
+    
+    .about-subtitle {
+        padding: 0px 10px;
+        font-size: 20px;
+    }
+}
+
+/* Медиа-запросы :hover, :active */
+
+@media (hover: hover) {
+    .header-link:hover {
+        transition: all 0.4s;
+        background-color: #433A7A;
+        border-radius: 10px;
+    }
+    
+    .about-info-contactBtn:hover {
+        transition: all 0.4s;
+        background-color: #5E5E5E;
+    }
+    
+    .features-item:hover .features-item-icon {
+        transition: all 0.4s;
+        border: 1px solid #2B2B2B;
+        background-color: #2B2B2B;
+    }
+    
+    .features-item:hover .features-icon {
+        fill: white;
+        transition: all 0.4s;
+    }
+    
+    .info-item-btn:hover {
+        transition: all 0.4s;
+        background-color: #5E5E5E;
+    }
+    
+    .wCCNSH-btn:hover {
+        transition: all 0.4s;
+        background-color: #5E5E5E;
+    }
+    
+    .discount-btn:hover {
+        transition: all 0.4s;
+        background-color: #5E5E5E;
+    }
+    
+    .contact-form-btn:hover {
+        transition: all 0.4s;
+        background-color: #5E5E5E;
+    }
+    
+    .popup button:hover {
+        transition: all 0.5s;
+        background-color: #5E5E5E;
+    }
+    
+    .main-information-navigation a:hover {
+        color: #495057;
+        text-decoration: none;
+        background-color: #E8EBED;
+        transition: all 0.5s;
+    }
+    
+    .info-img-wrap:hover .info-img {
+        transform: scale(1.1);
+        transition: all 0.5s;
+    }
+
+    .info-img-wrap:hover:after {
+        opacity: 0.4;
+        transition: all 0.5s;
+    }
+}
+
+@media (hover: none) {
+    .header-link:active {
+        transition: all 0.4s;
+        background-color: #433A7A;
+        border-radius: 10px;
+    }
+    
+    .about-info-contactBtn:active {
+        transition: all 0.4s;
+        background-color: #5E5E5E;
+    }
+    
+    .features-item:active .features-item-icon {
+        transition: all 0.4s;
+        border: 1px solid #2B2B2B;
+        background-color: #2B2B2B;
+    }
+    
+    .features-item:active .features-icon {
+        fill: white;
+        transition: all 0.4s;
+    }
+    
+    .info-item-btn:active {
+        transition: all 0.4s;
+        background-color: #5E5E5E;
+    }
+    
+    .wCCNSH-btn:active {
+        transition: all 0.4s;
+        background-color: #5E5E5E;
+    }
+    
+    .discount-btn:active {
+        transition: all 0.4s;
+        background-color: #5E5E5E;
+    }
+    
+    .contact-form-btn:active {
+        transition: all 0.4s;
+        background-color: #5E5E5E;
+    }
+    
+    .popup button:active {
+        transition: all 0.5s;
+        background-color: #5E5E5E;
+    }
+    
+    .main-information-navigation a:active {
+        color: #495057;
+        text-decoration: none;
+        background-color: #E8EBED;
+        transition: all 0.5s;
+    }
+    
+    .info-img-wrap:active .info-img {
+        transform: scale(1.1);
+        transition: all 0.5s;
+    }
+
+    .info-img-wrap:active:after {
+        opacity: 0.4;
+        transition: all 0.5s;
+    }
+}
